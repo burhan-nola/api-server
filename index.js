@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hey this is my API running ?");
+  res.status(200).json({ message: "Server started" });
 });
 
 app.listen(1000, () => {
